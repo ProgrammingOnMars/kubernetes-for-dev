@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: nginx
+  name: programmingonmars
   labels:
     app: programmingonmars
 spec:
   containers:
-    - name: nginx
-      image: nginx:latest
+    - name: programmingonmars-container
+      image: andrelucastic/demo:1.0
       ports:
         - containerPort: 80
