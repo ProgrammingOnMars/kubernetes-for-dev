@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: programmingonmars-replicaset
+  labels:
+    app: programmingonmars
+
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: programmingonmars
+
+  template:
+    metadata:
+      labels:
+        app: programmingonmars
+    spec:
+      containers:
+        - name: programmingonmars-container
+          image: andrelucastic/demo:2.0
+          ports:
+            - containerPort: 8080

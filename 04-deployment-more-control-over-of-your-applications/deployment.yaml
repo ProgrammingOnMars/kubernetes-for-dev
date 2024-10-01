@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: programmingonmars-deployment
+  labels:
+    app: programmingonmars
+
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: programmingonmars
+
+  template:
+    metadata:
+      labels:
+        app: programmingonmars
+    spec:
+      containers:
+        - name: programmingonmars-container
+          image: andrelucastic/demo:1.0
+          ports:
+            - containerPort: 8080

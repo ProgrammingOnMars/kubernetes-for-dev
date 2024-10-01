@@ -7,5 +7,9 @@ This give me motivations to create a series in my plataform showing the theory a
 ![img.png](01-whats-kubernetes-how-to-use/img.png)
 ## 02 - Running First Application on Kubernetes
 ![img_1.png](02-running-first-application-on-kubernetes/img_1.png)
+## 03 - Managing Pods Using Replicaset
+![img.png](03-managing-pods-using-replica-set/img.png)]
+## 04 - Deployment - More Control over of your applications
+![img.png](04-deployment-more-control-over-of-your-applications/img.png)
 
 This series you can found on - https://www.programmingonmars.io/
